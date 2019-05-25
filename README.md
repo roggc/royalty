@@ -1,3 +1,5 @@
-## queen
+## royalty
 
-evolution of *king*
+evolution of *queen*
+
+adding a graphql client and an api
