@@ -7,7 +7,12 @@
     "wpclientdev": "webpack -w --mode development --config ./src/client/wpindex.config.js",
     "wpssrdev": "webpack -w --mode development --config ./src/server/wpssr.config.js",
     "nodemon": "nodemon --exec \"babel-node -r node_modules/dotenv/config --inspect\" ./src/server/index.js",
-    "dev": "npm run wpclientdev& npm run wpssrdev& npm run nodemon"
+    "dev": "npm run wpclientdev& npm run wpssrdev& npm run nodemon",
+    "wpclient": "webpack --mode production --config ./src/client/wpindex.config.js",
+    "wpssr": "webpack --mode production --config ./src/server/wpssr.config.js",
+    "wpserver": "webpack --mode production --config ./src/server/wpindex.config.js",
+    "build":"npm run wpclient&&npm run wpssr&&npm run wpserver",
+    "start":"npx node ./dist/server.js"
   },
   "author": "",
   "license": "ISC",
