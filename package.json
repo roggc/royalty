@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wpindexdev": "webpack -w --mode development --config ./wpindex.config.js",
-    "wpssrdev": "webpack -w --mode development --config ./wpssr.config.js",
-    "nodemon": "nodemon --exec \"babel-node -r node_modules/dotenv/config --inspect\" ./server.js",
-    "dev": "npm run wpindexdev& npm run wpssrdev& npm run nodemon"
+    "wpclientdev": "webpack -w --mode development --config ./src/client/wpindex.config.js",
+    "wpssrdev": "webpack -w --mode development --config ./src/server/wpssr.config.js",
+    "nodemon": "nodemon --exec \"babel-node -r node_modules/dotenv/config --inspect\" ./src/server/index.js",
+    "dev": "npm run wpclientdev& npm run wpssrdev& npm run nodemon"
   },
   "author": "",
   "license": "ISC",
