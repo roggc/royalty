@@ -1,0 +1,24 @@
+.background
+{
+  border-radius: 5px;
+  border:1px solid black;
+  padding:5px;
+  margin:5px;
+  background-color: white;
+}
+
+.container
+{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu
+{
+  cursor:pointer;
+  border:inherit;
+  background-color: inherit;
+  border-radius: inherit;
+  padding: inherit;
+}

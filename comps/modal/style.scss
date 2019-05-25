@@ -1,0 +1,36 @@
+.containerModal
+{
+  border:inherit;
+  background-color: inherit;
+  border-radius: inherit;
+  padding: inherit;
+  position: absolute;
+  visibility: hidden;
+  cursor: initial;
+}
+
+.modal
+{
+  position: relative;
+  background-color: inherit;
+  border:inherit;
+  border-radius: inherit;
+  padding: inherit;
+  visibility: initial;
+  z-index: 1;
+}
+
+.fade
+{
+  transition: opacity .3s;
+}
+
+.fade.in
+{
+  opacity:1;
+}
+
+.fade.out
+{
+  opacity:0;
+}
