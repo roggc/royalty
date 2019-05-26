@@ -7,8 +7,9 @@ import {V1 as Footer} from 'src/comps/footer/index'
 import {V1 as FadeIn} from 'src/comps/fadeIn/index'
 import {Route} from 'react-router-dom'
 import {Link} from 'react-router-dom'
-import {V1 as Login} from 'src/comps/form1/index'
+import {V1 as Login} from 'src/comps/login/index'
 import {V1 as Center} from 'src/comps/center/index'
+import {V1 as Users} from 'src/comps/users/index'
 
 const v1=
 ({children,...rest})=>
@@ -21,10 +22,10 @@ const v1=
         menu:
           <div>
             <div>
-              <Link to="/">home</Link>
+              <Link to="/">login</Link>
             </div>
             <div>
-              <Link to="/about">about</Link>
+              <Link to="/users">users</Link>
             </div>
           </div>
       }
@@ -43,8 +44,9 @@ const v1=
                 <Login content=
                 {
                   {
-                    label1:<span>name:</span>,
-                    label2:<span>email:</span>,
+                    text1:<span>email:</span>,
+                    text2:<span>password:</span>,
+                    btnText:<span>enter</span>
                   }
                 }
                 />
@@ -52,18 +54,11 @@ const v1=
               />
             }
             />
-            <Route path='/about' render=
+            <Route path='/users' render=
             {
               ()=><FadeIn content=
               {
-                <Login content=
-                {
-                  {
-                    label1:<span>name:</span>,
-                    label2:<span>email:</span>,
-                  }
-                }
-                />
+                <Users/>
               }
               />
             }

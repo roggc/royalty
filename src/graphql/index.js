@@ -1,18 +1,19 @@
 export default
-query=>cb=>
+query=>variables=>cb=>
 fetch
 (
-  __backend__,
+  __api__,
   {
     method: 'POST',
-    body: JSON.stringify({query}),
+    body: JSON.stringify({query,variables}),
     headers:
     {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     },
     credentials:'include',
     mode:'cors'
   }
 )
-.then(res => res.json())
-.then(res => cb(res.data))
+.then(res=>res.json())
+.then(res=>cb(res.data))

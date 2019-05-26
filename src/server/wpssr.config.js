@@ -1,6 +1,9 @@
 const path = require('path')
+const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+
+const dev=process.env.NODE_ENV==='dev'
 
 module.exports =
 {
@@ -47,7 +50,13 @@ module.exports =
   },
   plugins:
   [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin
+    (
+      {
+        __dev__:dev
+      }
+    )
   ],
   resolve:
   {

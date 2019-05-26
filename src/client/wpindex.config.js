@@ -1,7 +1,12 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin= require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+const apiDev='http://localhost:5000'
+const api='http://api.royalty.ga'
+const dev=process.env.NODE_ENV==='dev'
 
 module.exports =
 {
@@ -66,6 +71,13 @@ module.exports =
       {
         template: './src/assets/foo.html',
         filename: 'foo.html'
+      }
+    ),
+    new webpack.DefinePlugin
+    (
+      {
+        __dev__:dev,
+        __api__:'\''+apiDev+'\'',
       }
     )
   ],
