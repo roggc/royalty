@@ -77,7 +77,7 @@ module.exports =
     (
       {
         __dev__:dev,
-        __api__:'\''+apiDev+'\'',
+        __api__:'\''+api+'\'',
       }
     )
   ],
