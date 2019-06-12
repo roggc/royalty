@@ -1,10 +1,10 @@
 import React from 'react'
-import {V1 as C} from 'src/comps/app/index'
+import App from 'src/comps/test6/index'
 
 export default
 (
   ()=>
   <div>
-    <C/>
+    <App/>
   </div>
 )()

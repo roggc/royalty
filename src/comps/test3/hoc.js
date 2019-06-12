@@ -1,5 +1,5 @@
 import hoc from 'src/hocs/hoc'
-const setProps=state=>setState=>
+const setProps= state=>setState=>
 {
   const props=
   {
@@ -7,11 +7,9 @@ const setProps=state=>setState=>
   return props
 }
 const iState=
+(()=>
 (
-  ()=>
-  (
-    {
-    }
-  )
-)()
+  {
+  }
+))()
 export default hoc(iState)(setProps)

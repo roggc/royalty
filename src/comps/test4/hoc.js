@@ -11,7 +11,9 @@ const iState=
   ()=>
   (
     {
+
     }
   )
-)()
+)
+()
 export default hoc(iState)(setProps)

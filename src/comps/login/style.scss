@@ -1,6 +1,11 @@
-.container
+.row
 {
-  display:inline-flex;
+  display:flex;
+
+  .col
+  {
+    flex:1;
+  }
 }
 
 .border
@@ -15,22 +20,6 @@
 {
   border:0px;
   padding:0px;
-}
-
-.row
-{
-  display: flex;
-  align-items: center;
-
-  .col
-  {
-    flex: 1;
-  }
-
-  .col2
-  {
-    margin-left: 5px;
-  }
 }
 
 .rowLast
@@ -55,4 +44,70 @@ button
   background-color: ghostwhite;
   padding: 4px 8px;
   cursor: pointer;
+}
+
+._2
+{
+  display:flex;
+  flex-direction:column;
+}
+
+.flex
+{
+  display : flex
+}
+.parent
+{
+  text-align :center;
+}
+.child
+{
+  display:inline-block;
+  position:absolute;
+}
+
+.container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.element
+{
+  position: absolute;
+}
+
+.centeredElement
+{
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.extra
+{
+  position: relative;
+  top:100px;
+}
+
+
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.foo
+{
+  position:absolute;
+  border:1px solid black;
+  padding:5px;
+  margin:5px;
+  border-radius: 5px;
+  display: inline-block;
 }

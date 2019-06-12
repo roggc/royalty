@@ -1,16 +1,20 @@
 import hoc from 'src/hocs/hoc'
-
-const getProps=(state,setState)=>
+const setProps=state=>setState=>
 {
-  const ob=
+  const props=
   {
   }
-  return ob
+  return props
 }
+const iState=
+(
+  ()=>
+  (
+    {
+      show:true
+    }
+  )
+)
+()
 
-const initialState=
-{
-  show:false
-}
-
-export default hoc(initialState)(getProps)
+export default hoc(iState)(setProps)

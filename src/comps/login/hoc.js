@@ -1,20 +1,37 @@
 import hoc from 'src/hocs/hoc'
 import login from 'src/graphql/queries/login'
 import {useRef} from 'react'
-
-const getProps=(state,setState)=>
+const setProps=state=>setState=>
 {
   const refEmail=useRef()
   const refPsswrd=useRef()
   const click=()=>
-  login
-  (
-    {
-      email:refEmail.current.value
-      ,psswrd:refPsswrd.current.value
-    }
-  )
-  (resp=>null)
+  {
+    setState
+    (
+      {
+        ...state,
+        fetching:true
+      }
+    )
+    login
+    (
+      {
+        email:refEmail.current.value
+        ,psswrd:refPsswrd.current.value
+      }
+    )
+    (
+      resp=>
+      setState
+      (
+        {
+          ...state,
+          fetching:false
+        }
+      )
+    )
+  }
   const props=
   {
     click,
@@ -23,9 +40,13 @@ const getProps=(state,setState)=>
   }
   return props
 }
-
-const initialState=
-{
-}
-
-export default hoc(initialState)(getProps)
+const iState=
+(
+  ()=>
+  (
+    {
+    }
+  )
+)
+()
+export default hoc(iState)(setProps)

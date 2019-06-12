@@ -1,8 +1,7 @@
 import hoc from 'src/hocs/hoc'
 import {useRef} from 'react'
 import useClickOutside from 'src/hooks/useClickOutside'
-
-const getProps=(state,setState)=>
+const setProps=state=>setState=>
 {
   const menuRef = useRef(null)
   useClickOutside
@@ -29,10 +28,14 @@ const getProps=(state,setState)=>
   }
   return props
 }
-
-const initialState=
-{
-  showMenu:false
-}
-
-export default hoc(initialState)(getProps)
+const iState=
+(
+  ()=>
+  (
+    {
+      showMenu:false
+    }
+  )
+)
+()
+export default hoc(iState)(setProps)

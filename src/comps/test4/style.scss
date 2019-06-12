@@ -1,0 +1,20 @@
+.flexaround
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+.flexcenter
+{
+  display:flex;
+  justify-content:center;
+}
+
+.card
+{
+  position:absolute;
+  border:1px solid black;
+  padding:5px;
+  border-radius: 5px;
+  margin:5px;
+}

@@ -1,10 +1,11 @@
-import hoc from 'src/comps/base/hoc'
 import React from 'react'
+import hoc from 'src/comps/base/hoc'
 import style from 'src/comps/base/style'
 
-const v1=
-({children,...rest})=>
-<div {...rest}>
-</div>
-
-export const V1=hoc(v1)
+export default
+hoc
+(
+  ({children,...rest})=>
+  <div {...rest}>
+  </div>
+)
