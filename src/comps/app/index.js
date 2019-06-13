@@ -33,44 +33,6 @@ hoc
         }
       }
     />
-    <Content content=
-      {
-        <div>
-          <Center content=
-          {
-            <div>
-              <Route path='/' exact render=
-              {
-                ()=><FadeIn content=
-                {
-                  <Login content=
-                  {
-                    {
-                      text1:<span>email:</span>,
-                      text2:<span>password:</span>,
-                      btnText:<span>enter</span>
-                    }
-                  }
-                  />
-                }
-                />
-              }
-              />
-              <Route path='/users' render=
-              {
-                ()=><FadeIn content=
-                {
-                  <Users/>
-                }
-                />
-              }
-              />
-            </div>
-          }
-          />
-        </div>
-      }
-    />
     <Footer content=
       {
         <span>&copy; 2019 react development</span>

@@ -25,5 +25,3 @@ hoc
     </div>
   </div>
 )
-
-export const V1=hoc(v1)

@@ -8,7 +8,49 @@
   height:300px;
 }
 
+.abs
+{
+  position: absolute;
+  margin-left: -5%;
+}
+
+.posRel
+{
+  height:inherit;
+  position: relative;
+  transform: translate(50%,50%);
+  margin-left:-5%;
+  margin-top:-10%;
+}
+
+
 .overflow
 {
   overflow: hidden;
+}
+
+.position
+{
+  position :realtive;
+}
+
+.height
+{
+  height:300px;
+}
+
+div.containerForall
+{
+    height: 10em;
+    position: relative
+}
+div.containerForall div
+{
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }

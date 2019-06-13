@@ -1,41 +1,47 @@
 import hoc from 'src/hocs/hoc'
 import {useRef} from 'react'
 import useClickOutside from 'src/hooks/useClickOutside'
-const setProps=state=>setState=>
-{
-  const menuRef = useRef(null)
-  useClickOutside
+export default
+hoc
+(
   (
-    (e) => menuClick(undefined,true),
-    menuRef
-  )
-  const menuClick=(e,hide=false)=>
-  {
-    setState
+    ()=>
     (
       {
-        ...state,
-        showMenu:!hide&&!state.showMenu
+        showMenu:false
       }
     )
-  }
-  const modalClick=(e)=>e.stopPropagation()
-  const props=
-  {
-    menuClick,
-    menuRef,
-    modalClick
-  }
-  return props
-}
-const iState=
-(
-  ()=>
-  (
-    {
-      showMenu:false
-    }
   )
+  ()
 )
-()
+(
+  state=>setState=>
+  {
+    const menuRef = useRef(null)
+    useClickOutside
+    (
+      (e) => menuClick(undefined,true),
+      menuRef
+    )
+    const menuClick=(e,hide=false)=>
+    {
+      setState
+      (
+        {
+          ...state,
+          showMenu:!hide&&!state.showMenu
+        }
+      )
+    }
+    const modalClick=(e)=>e.stopPropagation()
+    const props=
+    {
+      menuClick,
+      menuRef,
+      modalClick
+    }
+    return props
+  }
+)
+
 export default hoc(iState)(setProps)
