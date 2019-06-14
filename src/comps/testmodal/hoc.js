@@ -15,13 +15,13 @@ hoc
   ()
 )
 (
-  state=>setState=>
+  ideas=>setIdeas=>
   {
-    const props=
+    const actions=
     {
       hey:'whatever',
       hoy:'chunk'
     }
-    return props
+    return actions
   }
 )

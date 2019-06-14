@@ -10,7 +10,7 @@ import Loading from 'src/comps/loading/index'
 export default
 hoc
 (
-  ({children:{fetching},content,refEmail,refPsswrd,btnQueryClick,btnRef,...rest})=>
+  ({children:{fetching},content,refEmail,refPsswrd,btnQueryClick,btnRef,...actions})=>
   <div>
     <div className={style.border}>
       <div>

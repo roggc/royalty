@@ -14,11 +14,11 @@ hoc
   ()
 )
 (
-  state=>setState=>
+  ideas=>setIdeas=>
   {
-    const props=
+    const actions=
     {
     }
-    return props
+    return actions
   }
 )
