@@ -1,13 +1,15 @@
+__dev__&& console.log('src/comps/modal/index')
+
 import hoc from 'src/comps/modal/hoc'
 import React from 'react'
 import style from 'src/comps/modal/style'
 export default
 hoc
 (
-  ({children,children:{show},content,...rest})=>
-  <div className={`${style.containerModal} ${style.fade} ${show&&style.in} ${show||style.out}`}>
-    <div className={`${style.modal}`} {...rest}>
-      {content}
+  ({children,children:{show},action1,...actions})=>
+  <div className={`${style.containerModal} ${show&&style.fade} ${show||style.in} `}>
+    <div className={`${style.modal}`} {...actions}>
+      {action1}
     </div>
   </div>
 )

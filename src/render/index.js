@@ -1,5 +1,7 @@
+__dev__&& console.log('src/render/index')
+
 import React from 'react'
-import App from 'src/comps/test3/index'
+import App from 'src/comps/pages/login/index'
 
 export default
 (

@@ -1,4 +1,4 @@
-__dev__&&console.log('src/comps/base/hoc')
+__dev__&&console.log('src/comps/root/hoc')
 
 import hoc from 'src/hocs/hoc'
 export default
@@ -14,11 +14,11 @@ hoc
   ()
 )
 (
-  ideas=>setIdeas=>
+  state=>setState=>
   {
-    const actions=
+    const props=
     {
     }
-    return actions
+    return props
   }
 )

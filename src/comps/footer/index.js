@@ -1,3 +1,5 @@
+__dev__&& console.log('src/comps/footer/index')
+
 import React from 'react'
 import hoc from 'src/comps/footer/hoc'
 import style from 'src/comps/footer/style'
@@ -5,8 +7,8 @@ import style from 'src/comps/footer/style'
 export default
 hoc
 (
-  ({children,content,...rest})=>
-  <div className={`${style.background} ${style.others}`} {...rest}>
+  ({children,content,...actions})=>
+  <div className={`${style.background} ${style.others}`} {...actions}>
     {content}
   </div>
 )

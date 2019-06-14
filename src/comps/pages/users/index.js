@@ -1,6 +1,8 @@
-import hoc from 'src/comps/users/hoc'
+__dev__&& console.log('src/comps/pages/users/index')
+
 import React from 'react'
-import style from 'src/comps/users/style'
+import hoc from 'src/comps/pages/users/hoc'
+import style from 'src/comps/pages/users/style'
 
 export default
 hoc

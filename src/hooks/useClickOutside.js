@@ -1,3 +1,5 @@
+__dev__&& console.log('src/hooks/useClickOutside')
+
 import {useEffect} from 'react'
 
 export default (onOuterClick, innerRef)=>

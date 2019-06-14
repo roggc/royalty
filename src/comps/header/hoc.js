@@ -1,3 +1,5 @@
+__dev__&&console.log('src/comps/header/hoc')
+
 import hoc from 'src/hocs/hoc'
 import {useRef} from 'react'
 import useClickOutside from 'src/hooks/useClickOutside'
@@ -43,5 +45,3 @@ hoc
     return props
   }
 )
-
-export default hoc(iState)(setProps)

@@ -1,4 +1,7 @@
+__dev__&&console.log('src/comps/contentz/hoc')
+
 import hoc from 'src/hocs/hoc'
+import {useRef} from 'react'
 export default
 hoc
 (
@@ -12,11 +15,13 @@ hoc
   ()
 )
 (
-  state=>setState=>
+  ideas=>setIdeas=>
   {
-    const props=
+    const btnref=useRef()
+    const actions=
     {
+      btnref
     }
-    return props
+    return actions
   }
 )

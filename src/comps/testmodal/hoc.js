@@ -1,3 +1,5 @@
+__dev__&&console.log('src/comps/header/hoc')
+
 import hoc from 'src/hocs/hoc'
 export default
 hoc
@@ -6,6 +8,7 @@ hoc
     ()=>
     (
       {
+        hey:'how'
       }
     )
   )
@@ -16,6 +19,8 @@ hoc
   {
     const props=
     {
+      hey:'whatever',
+      hoy:'chunk'
     }
     return props
   }

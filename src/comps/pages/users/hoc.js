@@ -1,3 +1,5 @@
+__dev__&&console.log('src/comps/pages/users/hoc')
+
 import hoc from 'src/hocs/hoc'
 import users from 'src/graphql/queries/users'
 import {useEffect} from 'react'

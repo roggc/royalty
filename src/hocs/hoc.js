@@ -1,7 +1,9 @@
+__dev__&& console.log('src/hocs/hoc')
+
 import React,{useState} from 'react'
 export default
-state=>props=>C=>({children,...rest})=>
+moreIdeas=>actions=>C=>({children,...moreActions})=>
 {
-  const [state,setState]=useState({...state})
-  return <C {...props(state)(setState)} {...rest} >{{...state,...children}}</C>
+  const [ideas,setIdeas]=useState({...moreIdeas})
+  return <C {...actions(ideas)(setIdeas)} {...moreActions} >{{...ideas,...children}}</C>
 }

@@ -1,6 +1,7 @@
 .row
 {
   display:flex;
+  justify-content: space-between;
 
   .col
   {
@@ -8,8 +9,36 @@
   }
 }
 
+.flex
+{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+  div
+  {
+    flex:1;
+  }
+
+  .flexinput
+  {
+    margin-left:5px;
+  }
+
+  .flex div
+  {
+    display:inline-flex;
+  }
+
+  button
+  {
+    margin-top:5px;
+  }
+}
+
+
 .border
 {
+  display:inline-flex;
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
@@ -161,4 +190,8 @@ button
 .width
 {
   width:100%;
+}
+
+*{
+  font-family: sans-serif;
 }

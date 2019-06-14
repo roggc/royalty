@@ -1,3 +1,5 @@
+__dev__&&console.log('src/comps/test3/index')
+
 import React from 'react'
 import hoc from 'src/comps/test3/hoc'
 import style from 'src/comps/test3/style'

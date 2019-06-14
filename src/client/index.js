@@ -1,3 +1,5 @@
+__dev__&& console.log('src/client/index')
+
 import {hydrate} from 'react-dom'
 import React from 'react'
 

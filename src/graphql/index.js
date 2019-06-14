@@ -1,3 +1,5 @@
+__dev__&&console.log('src/graphql/index')
+
 export default
 query=>variables=>cb=>
 fetch

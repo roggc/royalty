@@ -1,3 +1,30 @@
+.container1
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  div
+  {
+    position:absolute;
+  }
+}
+
+
+
+
+
+.item
+{
+}
+.container2
+{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .border
 {
   border-radius: 5px;
@@ -6,23 +33,70 @@
   margin:5px;
   background-color: white;
   height:300px;
+
+  .row
+  {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .translate
+    {
+      transform:translateY(50%);
+    }
+
+    .col
+    {
+      height:100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.positionTry
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
 .abs
 {
   position: absolute;
   margin-left: -5%;
+
+  .abs
+  {
+      transform:tranlate(50%,50%)
+  }
 }
+
+.loading
+{
+  left:50%
+}
+
 
 .posRel
 {
-  height:inherit;
-  position: relative;
   transform: translate(50%,50%);
-  margin-left:-5%;
-  margin-top:-10%;
 }
-
+.posRel2
+{
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.trick2
+{
+  transform: translationY(50%);
+  position:absolute;
+  display:inline-block;
+}
 
 .overflow
 {

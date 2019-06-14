@@ -1,3 +1,5 @@
+__dev__&& console.log('src/comps/header/index')
+
 import hoc from 'src/comps/header/hoc'
 import React from 'react'
 import style from 'src/comps/header/style'

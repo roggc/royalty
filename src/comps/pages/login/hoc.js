@@ -1,3 +1,5 @@
+__dev__&&console.log('src/comps/pages/login/hoc')
+
 import hoc from 'src/hocs/hoc'
 import login from 'src/graphql/queries/login'
 import {useRef} from 'react'
@@ -14,16 +16,16 @@ hoc
   ()
 )
 (
-  state=>setState=>
+  ideas=>setIdeas=>
   {
     const refEmail=useRef()
     const refPsswrd=useRef()
-    const click=()=>
+    const btnQueryClick=()=>
     {
-      setState
+      setIdeas
       (
         {
-          ...state,
+          ...ideas,
           fetching:true
         }
       )
@@ -36,21 +38,25 @@ hoc
       )
       (
         resp=>
-        setState
-        (
-          {
-            ...state,
-            fetching:false
-          }
-        )
+        {
+          console.log(resp)
+          setIdeas
+          (
+            {
+              ...ideas,
+              fetching:false
+            }
+          )
+        }
+
       )
     }
-    const props=
+    const actions=
     {
-      click,
+      btnQueryClick,
       refEmail,
       refPsswrd
     }
-    return props
+    return actions
   }
 )
