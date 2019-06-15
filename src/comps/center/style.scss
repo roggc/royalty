@@ -2,16 +2,11 @@
 {
   display: flex;
   justify-content: center;
-}
 
-.col
-{
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-}
+  .col
+  {
+    line-height: 300px;
+    height:inherit;
+  }
 
-.container
-{
-  display: inline-flex;
 }

@@ -1,4 +1,4 @@
-__dev__&&console.log('src/comps/contentz/hoc')
+__dev__&&console.log('src/comps/content/hoc')
 
 import hoc from 'src/hocs/hoc'
 import {useRef} from 'react'

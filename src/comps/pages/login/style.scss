@@ -6,6 +6,9 @@
   .col
   {
     flex:1;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
   }
 }
 
@@ -38,7 +41,7 @@
 
 .border
 {
-  display:inline-flex;
+  display:flex;
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;

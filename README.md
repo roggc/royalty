@@ -2,4 +2,4 @@
 
 evolution of *queen*
 
-adding a graphql client and an api
+adding a graphql client and an api and polishyng details.

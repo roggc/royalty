@@ -1,4 +1,4 @@
-__dev__&& console.log('src/comps/center/index')
+__dev__&& console.log('src/comps/center/center')
 
 import React from 'react'
 import hoc from 'src/comps/center/hoc'
@@ -7,13 +7,11 @@ import style from 'src/comps/center/style'
 export default
 hoc
 (
-  ({children,content,...actions})=>
+  ({children,action1,...actions})=>
   <div {...actions}>
     <div className={`${style.row}`}>
-      <div className={`${style.col}`}>
-        <div className={`${style.container}`}>
-          {content}
-        </div>
+    <div className={`${style.col}`}>
+          {action1}
       </div>
     </div>
   </div>

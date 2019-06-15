@@ -1,4 +1,4 @@
-__dev__&& console.log('src/comps/fadein/index')
+__dev__&& console.log('src/comps/fadein/fadein')
 
 import React from 'react'
 import hoc from 'src/comps/fadeIn/hoc'

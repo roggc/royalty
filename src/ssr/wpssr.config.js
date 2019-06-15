@@ -11,7 +11,7 @@ module.exports =
   externals: [nodeExternals()],
   entry:
   {
-    ssr: './src/server/ssr.js'
+    ssr: './src/ssr/ssr.js'
   },
   output:
   {

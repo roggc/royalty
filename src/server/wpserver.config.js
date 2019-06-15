@@ -6,7 +6,7 @@ module.exports=
   externals: [nodeExternals()],
   entry:
   {
-    server: './src/server/index.js'
+    server: './src/server/server.js'
   },
   output:
   {

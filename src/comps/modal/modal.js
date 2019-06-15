@@ -1,4 +1,4 @@
-__dev__&& console.log('src/comps/modal/index')
+__dev__&& console.log('src/comps/modal/modal')
 
 import hoc from 'src/comps/modal/hoc'
 import React from 'react'

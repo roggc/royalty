@@ -1,9 +1,9 @@
-__dev__&& console.log('src/comps/header/index')
+__dev__&& console.log('src/comps/header/header')
 
 import hoc from 'src/comps/header/hoc'
 import React from 'react'
 import style from 'src/comps/header/style'
-import Modal from 'src/comps/modal/index'
+import Modal from 'src/comps/modal/modal'
 
 export default
 hoc

@@ -1,4 +1,4 @@
-__dev__&&console.log('src/graphql/index')
+__dev__&&console.log('src/graphql/graphql')
 
 export default
 query=>variables=>cb=>

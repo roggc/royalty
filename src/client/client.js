@@ -11,7 +11,7 @@ import 'src/assets/favicon/favicon-32x32'
 import 'src/assets/favicon/favicon'
 import 'src/assets/favicon/site'
 
-import render from 'src/render/index'
+import render from 'src/render/render'
 import {BrowserRouter} from 'react-router-dom'
 
 hydrate

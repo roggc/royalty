@@ -1,4 +1,4 @@
-__dev__&&console.log('src/comps/test3/index')
+__dev__&&console.log('src/comps/test3/test3')
 
 import React from 'react'
 import hoc from 'src/comps/test3/hoc'

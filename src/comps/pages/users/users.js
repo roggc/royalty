@@ -1,4 +1,4 @@
-__dev__&& console.log('src/comps/pages/users/index')
+__dev__&& console.log('src/comps/pages/users/users')
 
 import React from 'react'
 import hoc from 'src/comps/pages/users/hoc'

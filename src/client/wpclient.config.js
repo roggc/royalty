@@ -10,7 +10,7 @@ const dev=process.env.NODE_ENV==='dev'
 
 module.exports =
 {
-  entry:'./src/client/index.js',
+  entry:'./src/client/client.js',
   module:
   {
     rules:

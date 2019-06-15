@@ -1,6 +1,6 @@
 __dev__&&console.log('src/graphql/queries/users')
 
-import graphql from 'src/graphql/index'
+import graphql from 'src/graphql/graphql'
 
 const query=
 `
